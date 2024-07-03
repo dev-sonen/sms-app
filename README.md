@@ -1,2 +1,1 @@
-# sms-app
-sms application for disaster response
+# sms disaster response app

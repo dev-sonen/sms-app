@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom font */
+@font-face {
+    font-family: "open-sans-light";
+    src: url( "../fonts/OpenSans-Light.ttf" );
+}
+
+@font-face {
+    font-family: "open-sans-regular";
+    src: url( "../fonts/OpenSans-Regular.ttf" );
+}
+
+@font-face {
+    font-family: "open-sans-medium";
+    src: url( "../fonts/OpenSans-Medium.ttf" );
+}
+
+@font-face {
+    font-family: "open-sans-semibold";
+    src: url( "../fonts/OpenSans-SemiBold.ttf" );
+}
+
+@font-face {
+    font-family: "open-sans-bold";
+    src: url( "../fonts/OpenSans-Bold.ttf" );
+}
+
+@font-face {
+    font-family: "open-sans-extrabold";
+    src: url( "../fonts/OpenSans-ExtraBold.ttf" );
+}
+
+/* smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* remove arrows in the input type number field */
+input::-webkit-outer-spin-button , input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[ type = number ] { -moz-appearance: textfield; }
+
+/* remove input autofill background */
+input:-webkit-autofill , input:-webkit-autofill:hover , input:-webkit-autofill:focus , input:-webkit-autofill:active{ box-shadow: 0 0 0 30px #e5e7eb inset !important; -webkit-box-shadow: 0 0 0 30px #e5e7eb inset !important; }
+
+/* custom scroll bar */
+::-webkit-scrollbar { width: 1px; height: 1px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }   
+::-webkit-scrollbar-thumb { background: #0284c7; border-radius: 100px; }
+::-webkit-scrollbar-thumb:hover { background: #0ea5e9; }
+
+/* remove datalist down arrow */
+input::-webkit-calendar-picker-indicator {
+    display: none;
+    opacity: 0;
+}
+
+/* no scrollbar custom class */
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* map box bottom display */
+div.mapboxgl-ctrl-bottom-right { display: none !important }

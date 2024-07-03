@@ -1,0 +1,6 @@
+{
+    "queue": "/var/spool/sms/modem1",
+    "sent": "/var/spool/sms/sent",
+    "inbox": "/var/spool/sms/incoming",
+    "failed": "/var/spool/sms/failed"
+}
